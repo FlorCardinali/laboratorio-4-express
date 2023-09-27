@@ -25,7 +25,7 @@ const getPokemonIdGeneration = (req = request, res = response) => {
     if (id < 151 || id > 251) {
         res.status(400).json({msn:'Pokemon bad request'})
     }
-
+    else
     axios.get(`${url}/pokemon/${id || name}/`)
     .then(({status, statusText, data}) => {
         let types = [];
