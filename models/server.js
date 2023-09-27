@@ -23,7 +23,7 @@ class Server {
 
 
     routers() {
-        this.app.use("/api/v1/demo", require("../routes/demo"));
+        this.app.use("/api/v1", require("../routes/pokemon_primera_gen"));
     }
 }
 module.exports = Server;
