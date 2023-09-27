@@ -5,6 +5,6 @@ const rutas = Router();
 
 rutas.get('/pokemon-generation2', getSecondGeneretion)
 rutas.get('/pokemon-generation2/:id', getPokemonIdGeneration)
-rutas.get('/pokemon-type/:type', getPokemonType)
+rutas.get('/pokemon-type', getPokemonType)
 
 module.exports = rutas;
