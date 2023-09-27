@@ -22,7 +22,7 @@ const getSecondGeneretion = (req = request, res = response) => {
 const getPokemonIdGeneration = (req = request, res = response) => {
     const {name, id} = req.params;
 
-    if (id < 151 && id > 251) {
+    if (id < 151 || id > 251) {
         res.status(400).json({msn:'Pokemon bad request'})
     }
 
