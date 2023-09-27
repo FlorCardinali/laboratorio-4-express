@@ -4,43 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Proyecto de <b>API Express Pokemon</b>, Laboratorio<b> IV</b>, 2023.</h1>
     <h2>Florencia Cardinali y Francisco Cuschie.</h2>
 
-    <div>
-        <a href="https://pokemon-api-express.onrender.com/api/v1/pokemon/primer_gen/1">
-            <b>/api/v1/pokemon/primer_gen/(id del pokemon a buscar, ej 1)</b>
-            <br>
+    <div id="box">
+        <div>
+            <a href="https://pokemon-api-express.onrender.com/api/v1/pokemon/primer_gen/1">
+            <b>/api/v1/pokemon/primer_gen/(id del pokemon a buscar, ej 1)</b>  
+            </a> 
+            <br> 
             devuelve un pokemon por su id de la priemra gen.
-        </a>
-        <a href="https://pokemon-api-express.onrender.com/api/v1/primera_generacion">
+        </div>
+        
+        <div>
+             <a href="https://pokemon-api-express.onrender.com/api/v1/primera_generacion">
             <b>/api/v1/primera_generacion</b>
+            </a>
             <br>
             devuelve todos los pokemones de la generacion 1
-        </a>
-        <a href="https://pokemon-api-express.onrender.com/api/v1/pokemones/color?color=pink&gen=2">
+        </div>
+       
+        <div>
+            <a href="https://pokemon-api-express.onrender.com/api/v1/pokemones/color?color=pink&gen=2">
             <b>/api/v1/pokemones/color(query params: color, gen. ej: color=pink, gen=2)</b>
+            </a>
             <br>
             devuelve los pokemones del color del parametro y opcionalmente de la 
             generacion indicada
-        </a>
-        <a href="https://pokemon-api-express.onrender.com/api/v1/pokemon-generation2">
+        </div>
+        
+        <div>
+            <a href="https://pokemon-api-express.onrender.com/api/v1/pokemon-generation2">
             <b>/api/v1/pokemon-generation2</b>
+            </a>
             <br>
             devuelve todos los pokemones de la generacion 2 y sus movimiento.
-        </a>
-        <a href="https://pokemon-api-express.onrender.com/api/v1/pokemon-generation2/155">
+        </div>
+        
+        <div>
+            <a href="https://pokemon-api-express.onrender.com/api/v1/pokemon-generation2/155">
             <b>/api/v1/pokemon-generation2/(id) ej: 155</b>
+            </a>
             <br>
             devuevle un pokemon por su id de la segunda gen.
-        </a>
-        <a href="https://pokemon-api-express.onrender.com/api/v1/pokemon-type?type=psychic">
+        </div>
+        
+        <div>
+            <a href="https://pokemon-api-express.onrender.com/api/v1/pokemon-type?type=psychic">
             <b>/api/v1/pokemon-type(query params: type. ej: type=psychic)</b>
+            </a>
             <br>
             devuelve todos los pokemones del tipo especificado
-        </a>
+        </div>
+        
     </div>
 </body>
 </html>
