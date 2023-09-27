@@ -56,7 +56,7 @@ const getPokemonsPorColorYGen = (req = request, res = response) =>{
         res.status(412).json({error: "Faltan parametros"})
     } else {
         axios.get(`https://pokeapi.co/api/v2/pokemon-color/${color}/`)
-            .then(({status, statusText, data}) => {
+            .then(({data}) => {
             
                 let pokemones = [];
                 for (let i in data.pokemon_species){
