@@ -47,7 +47,6 @@ const getPokemonIdGeneration = (req = request, res = response) => {
 
 const getPokemonType = (req = request, res = response) => {    
     const {type} = req.query;
-    console.log(type)
 
     axios.get(`${url}/type/${type}`)
     .then(({status, statusText, data}) => {
