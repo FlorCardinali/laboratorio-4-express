@@ -24,6 +24,7 @@ class Server {
 
     routers() {
         this.app.use("/api/v1", require("../routes/pokemon_primera_gen"));
+        this.app.use("/api/v1", require("../routes/pokemon_segunda_gen"));        
     }
 }
 module.exports = Server;
